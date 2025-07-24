@@ -1,0 +1,29 @@
+        first: {
+            heading: '',
+            firstPara: '',
+        },
+        second: {
+            heading: '',
+            firstPara: '',
+        },
+        third: {
+            heading: '', 
+            firstPara: '',
+        },
+        fourth: {
+            heading: '',
+            firstPara: '',
+        },
+        fifth: {
+            heading: '',
+            firstPara: '',
+        },
+        sixth: {
+            heading: '',
+            firstPara: '',
+        },
+        seventh: {
+            heading: '',
+            firstPara: '',
+        },
+    }

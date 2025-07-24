@@ -1,0 +1,57 @@
+/* app.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+/* Rest of your styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Custom CSS for SweetAlert popup */
+.swal-title {
+  color: #4caf50; /* Green color for title */
+  font-size: 24px; /* Larger font size for title */
+}
+
+.swal-text {
+  color: #333; /* Dark color for text */
+  font-size: 16px; /* Font size for text */
+}
+
+.swal-icon.success {
+  color: #4caf50; /* Green color for success icon */
+}
+
+.swal-button {
+  background-color: #FFB400; /* Green color for button background */
+  color: white; /* White color for button text */
+  font-weight: bold; /* Bold font weight for button text */
+  border-radius: 5px; /* Rounded border radius for button */
+  padding: 10px 20px; /* Padding for button */
+}
+
+.swal-button:hover {
+  background-color: #FFB400; /* Darker green color on button hover */
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {to{transform: rotate(.5turn)}}

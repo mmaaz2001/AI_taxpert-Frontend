@@ -1,0 +1,107 @@
+import React, { useState } from 'react';
+import { Box, Button, Typography } from '@mui/material';
+import { Document, Page, pdfjs } from 'react-pdf';
+
+// This is required to avoid an error with react-pdf
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/build/pdf.worker.min.js`;
+
+const PdfViewer = () => {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
+
+  const changePage = (offset) => {
+    setPageNumber((prevPageNumber) => prevPageNumber + offset);
+  };
+
+  const previousPage = () => {
+    changePage(-1);
+  };
+
+  const nextPage = () => {
+    changePage(1);
+  };
+
+  return (
+    <Box>
+      <Document file="your-pdf-file.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+        <Page pageNumber={pageNumber} />
+      </Document>
+      <Typography>
+        Page {pageNumber} of {numPages}
+      </Typography>
+      <Button onClick={previousPage} disabled={pageNumber <= 1}>
+        Previous
+      </Button>
+      <Button onClick={nextPage} disabled={pageNumber >= numPages}>
+        Next
+      </Button>
+    </Box>
+  );
+};
+
+export default PdfViewer;
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useState } from 'react';
+import { Box, Button, Typography } from '@mui/material';
+import { Document, Page, pdfjs } from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/build/pdf.worker.min.js`;
+
+const PdfViewer = () => {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
+
+  const changePage = (offset) => {
+    setPageNumber((prevPageNumber) => prevPageNumber + offset);
+  };
+
+  const previousPage = () => {
+    changePage(-1);
+  };
+
+  const nextPage = () => {
+    changePage(1);
+  };
+
+  return (
+    <Box>
+      <Document
+        file="/path/to/your/pdf/file.pdf" // Update the path to your PDF file
+        onLoadSuccess={onDocumentLoadSuccess}
+      >
+        <Page pageNumber={pageNumber} />
+      </Document>
+      <Typography>
+        Page {pageNumber} of {numPages}
+      </Typography>
+      <Button onClick={previousPage} disabled={pageNumber <= 1}>
+        Previous
+      </Button>
+      <Button onClick={nextPage} disabled={pageNumber >= numPages}>
+        Next
+      </Button>
+    </Box>
+  );
+};
+
+export default PdfViewer;
+
