@@ -87,7 +87,7 @@ export default function HomePage() {
                 <Typography variant="body2" sx={{ fontSize: '1.125rem', marginBottom: '1rem', [theme.breakpoints.down('md')]: { fontSize: '1rem' } }}>
                   {/* Lorem ipsum dolor sit amet consectetur. */}
                 </Typography>
-                <MyButton onClick={() => navigate('/login')} style={{ paddingLeft: '2rem', paddingRight: '2rem', paddingTop: '1rem', paddingBottom: '1rem', fontSize: '1.1rem' }} button={"Discover AI Taxpert"} />
+                <MyButton onClick={() => navigate('/chatbot')} style={{ paddingLeft: '2rem', paddingRight: '2rem', paddingTop: '1rem', paddingBottom: '1rem', fontSize: '1.1rem' }} button={"Discover AI Taxpert"} />
               </Box>
             </Box>
           </AppBar>

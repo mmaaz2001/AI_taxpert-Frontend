@@ -51,19 +51,19 @@ const router = createBrowserRouter([
       // },
       {
         path: '/chatbot',
-        element: <AuthenticatedRoute element={<Chatbot />} />,
+        element: <Chatbot />,
       },
       {
         path: '/corporate-tax',
-        element: <AuthenticatedRoute element={<Ebook />} />,
+        element: <Ebook />,
       },
       {
         path: '/faqs',
-        element: <AuthenticatedRoute element={<Faqs />} />,
+        element: <Faqs />,
       },
       {
         path : '/cookie',
-        element: <AuthenticatedRoute element={<CookieDisplay />} />,
+        element: <CookieDisplay />,
       },
 
       {/* <Route path="/chatbot" element={<AuthenticatedRoute element={<Chatbot />} />} />

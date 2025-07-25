@@ -155,19 +155,19 @@ const handleSubmit = async (e) => {
                 <Typography variant='body1' sx={{ display: 'flex', gap: '2rem' }}>
                   <PhoneInTalkOutlinedIcon sx={{ color: 'rgba(255, 180, 0, 1)' }} />
                   <span style={{ fontSize: '0.8rem' }}>
-                    +1012 3456 789
+                    (021) 111 272 111
                   </span>
                 </Typography>
                 <Typography variant='body1' sx={{ display: 'flex', gap: '2rem' }}>
                   <MailOutlinedIcon sx={{ color: 'rgba(255, 180, 0, 1)' }} />
                   <span style={{ fontSize: '0.8rem' }}>
-                    demo@gmail.com
+                    de.brb@brbgroup.pk
                   </span>
                 </Typography>
                 <Typography variant='body1' sx={{ display: 'flex', gap: '2rem' }}>
                   <FmdGoodOutlinedIcon sx={{ color: 'rgba(255, 180, 0, 1)' }} />
                   <span style={{ fontSize: '0.8rem' }}>
-                    21-C, 5th Lane, Zamzama Commercial, Phase 5, DHA, Karachi, Pakistan
+                    Office No. C, 42 Bait-Ul-Mukarram Rd, opposite Hakeem Saeed Park، Block 8 Gulshan-e-Iqbal, Karachi, 75300
                   </span>
                 </Typography>
               </div>

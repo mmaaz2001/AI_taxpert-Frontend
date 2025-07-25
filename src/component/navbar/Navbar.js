@@ -169,21 +169,21 @@ const handleLogout = () => {
                         <MenuItem onClick={handleClickAbout}>About Us</MenuItem>
                         <MenuItem onClick={handleClickContact}>Contact</MenuItem>
                         {/* <MenuItem onClick={handleLogout}>Logout</MenuItem> */}
-                        <MenuItem onClick={() => {
+                        {/* <MenuItem onClick={() => {
     handleMenuClose();
     navigate('/');
 }}>
     Logout
-</MenuItem>
+</MenuItem> */}
 
                     </Menu>
                 </Box>
                 {/* <Box sx={{ display: { xs: 'none', md: 'flex' } }} onClick={handleLogout}>
                     <MyButton button={"Logout"} />
                 </Box> */}
-                <Box sx={{ display: { xs: 'none', md: 'flex' } }} onClick={() => navigate('/')}>
+                {/* <Box sx={{ display: { xs: 'none', md: 'flex' } }} onClick={() => navigate('/')}>
     <MyButton button={"Logout"} />
-</Box>
+</Box> */}
 
             </Toolbar>
         </AppBar>

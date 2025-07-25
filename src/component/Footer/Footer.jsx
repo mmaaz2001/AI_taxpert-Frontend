@@ -113,12 +113,12 @@ const Footer = () => {
             </Grid>
             <Grid item sx={{ display: 'flex', gap: '1rem', flexDirection: 'column' }}>
               <Typography variant="body1" sx={{ ':hover': { textDecoration: 'underline', cursor: 'pointer' } }}>
-                Address: 21-C, 5th Lane, Zamzama Commercial, Phase 5, DHA, Karachi, Pakistan
+                Address: Office No. C, 42 Bait-Ul-Mukarram Rd, opposite Hakeem Saeed Park، Block 8 Gulshan-e-Iqbal, Karachi, 75300
               </Typography>
               <Typography variant="body1" sx={{ ':hover': { textDecoration: 'underline', cursor: 'pointer' } }}>
-                <a href="mailto:info@indenta-technologies.com" style={{ color: 'white', textDecoration: 'none' }}>info@indenta-technologies.com</a>
+                <a href="mailto:de.brb@brbgroup.pk" style={{ color: 'white', textDecoration: 'none' }}>de.brb@brbgroup.pk</a>
               </Typography>
-              <Typography variant="body1" sx={{ ':hover': { textDecoration: 'underline', cursor: 'pointer' } }}>+92 21 111 124 338</Typography>
+              <Typography variant="body1" sx={{ ':hover': { textDecoration: 'underline', cursor: 'pointer' } }}>(021) 111 272 111</Typography>
             </Grid>
 
           </Grid>
