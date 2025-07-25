@@ -39,7 +39,7 @@ const handleSubmit = async (e) => {
   };
 
   try {
-    const response = await fetch('http://192.168.1.208:8000/contact/contact-us/', {
+    const response = await fetch('https://taxpert-backend.brbtechnologies.pk/contact/contact-us/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
   //   const formData = { firstName, lastName, email, phoneNumber, message };
 
   //   try {
-  //     const response = await fetch('http://192.168.1.208:8000/contact/contact-us/', {
+  //     const response = await fetch('https://taxpert-backend.brbtechnologies.pk/contact/contact-us/', {
   //       method: 'POST',
   //       headers: {
   //         'Content-Type': 'application/json',

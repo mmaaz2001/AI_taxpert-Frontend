@@ -45,7 +45,7 @@ export default function Login() {
         event.preventDefault();
 
         try {
-            const response = await fetch('http://192.168.1.208:8000/accounts/login/', {
+            const response = await fetch('https://taxpert-backend.brbtechnologies.pk/accounts/login/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ export default function Login() {
 
     //     try {
     //         // const response = await fetch('http://192.168.100.77:8000/login/', {
-    //         const response = await fetch('http://192.168.1.208:8000/accounts/login/', {
+    //         const response = await fetch('https://taxpert-backend.brbtechnologies.pk/accounts/login/', {
     //             method: 'POST',
     //             headers: {
     //                 'Content-Type': 'application/json',

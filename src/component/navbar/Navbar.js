@@ -45,7 +45,7 @@ function getCookie(name) {
 const handleLogout = () => {
 //     const csrfToken = getCookie('csrftoken');  // Retrieve CSRF token from cookies
 //    console.log(csrfToken)
-     fetch('http://192.168.1.208:8000/accounts/logout/', {
+     fetch('https://taxpert-backend.brbtechnologies.pk/accounts/logout/', {
         method: "POST",
         credentials: "include",
     })

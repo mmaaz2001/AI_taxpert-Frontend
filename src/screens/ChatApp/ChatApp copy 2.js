@@ -83,7 +83,7 @@
 //       setInputMessage("");
 
 //       try {
-//         const response = await fetch("http://192.168.1.208:8000/chatbot/chat/", {
+//         const response = await fetch("https://taxpert-backend.brbtechnologies.pk/chatbot/chat/", {
 //           method: "POST",
 //           headers: {
 //             "Content-Type": "application/json",

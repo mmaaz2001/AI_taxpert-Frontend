@@ -33,7 +33,7 @@ function Signup() {
 
         try {
             console.log('Sending request to backend...');
-            const response = await fetch('http://192.168.1.208:8000/accounts/register/', {
+            const response = await fetch('https://taxpert-backend.brbtechnologies.pk/accounts/register/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
